@@ -15,18 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/government-polytechnic-college-bhalsabhagaj-haridwar-96917",
-  "https://www.shiksha.com/college/k-c-polytechnic-college-una-99181",
-  "https://www.shiksha.com/college/sastha-polytechnic-college-tamil-nadu-other-100097",
-  "https://www.shiksha.com/college/svs-polytechnic-college-ramadevam-namakkal-100589",
-  "https://www.shiksha.com/college/riva-institute-of-aesthetics-raja-rajeshwari-nagar-bangalore-101929",
-  "https://www.shiksha.com/college/jasveer-memorial-college-churu-116581",
-  "https://www.shiksha.com/college/shri-guru-teg-bahadur-college-sathiala-amritsar-116767",
-  "https://www.shiksha.com/college/sunrise-academy-dehradun-122157",
-  "https://www.shiksha.com/college/pt-tp-shukla-graduate-college-venkatnagar-anuppur-130809",
-  "https://www.shiksha.com/college/mahant-gurbanta-dass-memorial-college-of-pharmacy-bathinda-154873",
-  "https://www.shiksha.com/college/shri-ram-institute-of-technology-pharmacy-jabalpur-156925",
-
+  "https://www.shiksha.com/college/virani-science-and-shri-yogiji-maharaj-arts-commerce-and-science-rajkot-142411",
+  "https://www.shiksha.com/college/nand-kishore-college-of-pharmacy-prayagraj-155933",
+  "https://www.shiksha.com/college/salfia-unani-medical-college-and-hospital-darbhanga-182261",
+  "https://www.shiksha.com/college/l-t-r-institute-of-technology-meerut-59997",
+  "https://www.shiksha.com/college/gondia-homoeopathic-medical-college-and-hospital-maharashtra-other-70093",
+  "https://www.shiksha.com/college/kharagpur-homoeopathic-medical-college-and-hospital-87045",
+  "https://www.shiksha.com/college/nandkumar-shinde-college-of-pharmacy-aurangabad-88649",
+  "https://www.shiksha.com/college/moyna-pharmaceutical-institute-west-bengal-other-149263",
+  "https://www.shiksha.com/college/manjushree-institute-of-health-sciences-bangalore-186429",
+  "https://www.shiksha.com/college/sankara-college-of-optometry-bangalore-186757",
+  "https://www.shiksha.com/college/ajay-sangaal-institute-of-medical-science-research-shamli-231738",
+  "https://www.shiksha.com/college/dr-rajendra-prasad-shikshan-sansthan-barabanki-65599",
+  "https://www.shiksha.com/college/dr-naikwadi-college-of-d-pharmacy-nashik-88647",
+  "https://www.shiksha.com/college/government-polytechnic-college-dhangar-haryana-other-98403",
+  "https://www.shiksha.com/college/ritee-college-of-pharmacy-raipur-146535",
+  "https://www.shiksha.com/college/noorie-college-of-pharmacy-kolar-149461",
+  "https://www.shiksha.com/college/sonajirao-kshirsagar-homoeopathy-college-beed-189585",
+  "https://www.shiksha.com/college/k-j-r-college-of-pharmacy-rajahmundry-61325",
+  "https://www.shiksha.com/college/max-super-speciality-hospital-shalimar-bagh-delhi-105895",
+  "https://www.shiksha.com/college/vivekananda-mission-ashram-haldia-120179",
 ]
 
 
@@ -9238,7 +9246,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4161
+    c_count = 2401
 
     try:
         for base_url in BASE_URL:
